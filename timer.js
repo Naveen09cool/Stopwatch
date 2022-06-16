@@ -59,7 +59,7 @@ function reset() {
 
 // }
 function lap() {
-  let lapList = document.getElementById("lapList")
+  let lapList = document.getElementById("lap-list")
   // Create an "li" node:
   let node = document.createElement("li");
   // Create a text node:

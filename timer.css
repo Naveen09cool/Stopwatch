@@ -38,8 +38,8 @@ body {
   
   .gold {
     font-weight: 200;
-    color: #f3f3f3;
-    text-shadow: 0px 0px 17px #ffbf00, 0px 0px 20px #fbbc00;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ffbf00, 0px 0px 10px #fbbc00;
     /* text-shadow: 2px -2px 0px red, 0 0 2em red, 0 0 0.2em blue; */
   }
   .gold h1{
@@ -59,20 +59,24 @@ body {
   button {
     cursor: pointer;
     background: transparent;
-    padding: 0;
     border: none;
     margin: 10px;
     outline: none;
     border: 2px solid white;
     border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    padding: 2px;
+    box-shadow: 0px 0px 10px #ffbf00;
   }
   
-  #playButton {
-    display: block;
+  #resetButton {
+    margin-top: -2px;
   }
   button:hover{
-    border: 2px solid rgb(254, 25, 25);
-    color: red;
+    border: 2px solid #ffbf00;
+    box-shadow: 0px 0px 20px #ffbf00;
+    /* color: red; */
   }
   
   #pauseButton {
@@ -81,17 +85,35 @@ body {
 
 #lap-container{
   width: 250px;
+  font-weight: 200;
+  /* background-color: #f3f3f3; */
+  /* font-size:36px; */
   /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+#lap-list{
+
 }
 
-#lap-container h1{
-  font-weight: 200;
-}
-#lapList li{
+#lap-list li{
   border: 1px solid white;
   border-radius: 5px;
   text-align: center;
   list-style: none;
   margin: 5px;
   font-size: large;
+}
+
+/* icons */
+#down-icon{
+  margin: 4px;
+}
+#lap-heading{
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  font-size: 36px;
+  float: left;
+  background-color: rgba(240, 248, 255, 0.201);
 }
