@@ -18,7 +18,10 @@
 
   <body>
     <div class="stopwatch">
-      <h1><span class="gold">STOPWATCH</span></h1>
+      <div class="gold">
+        <h1>STOPWATCH</h1>
+      </div>
+
       <div class="circle">
         <span class="time" id="display">00:00:00</span>
       </div>
@@ -37,13 +40,13 @@
         <button class="buttonReset">
           <img id="resetButton" src="img/icon/restart_alt_black_48dp.svg" />
         </button>
-        
       </div>
+
       <div id="lap-container">
-        <ul id="lapList">
-            <li>Laps:</li>
-        </ul>
-    </div>
+        <h1>Laps <img id="down" src="img/icon/arrow_circle_down_48.svg" alt="Down"></h1>
+        <span id="lapList"> </span>
+      </div>
+
     </div>
     <script src="timer.js"></script>
   </body>

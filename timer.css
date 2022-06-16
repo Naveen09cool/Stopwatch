@@ -1,26 +1,20 @@
 body {
-    background-color: #2c3347;
+    /* background-color: #2c3347; */
+    background-image: linear-gradient(to bottom, #051937, #09152d, #0b1024, #080b1b, #030411);
     color: #ffffff;
-  }
-  
-  h1 {
-    font-size: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-  
-    text-align: center;
-    line-height: 59px;
-  
-    padding: 0 64px;
-    margin: 0;
+
   }
   
   .stopwatch {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    grid-row-gap: 23px;
     width: 100%;
-    padding-top: 25px;
+    min-height: 100vh;
+    align-items: center;
   }
   
   .circle {
@@ -33,6 +27,7 @@ body {
   
     border: 2px solid;
     border-radius: 50%;
+    margin: 0px;
   }
   
   .time {
@@ -43,17 +38,22 @@ body {
   
   .gold {
     font-weight: 200;
-  
     color: #f3f3f3;
-    text-shadow: 0 0px 7px #e9c865, 0 0 10px #fbbc00;
+    text-shadow: 0px 0px 17px #ffbf00, 0px 0px 20px #fbbc00;
     /* text-shadow: 2px -2px 0px red, 0 0 2em red, 0 0 0.2em blue; */
   }
+  .gold h1{
+    font-size: 48px !important;
+    font-weight: 200;
+    text-align: center;
+    line-height: 59px;
+}
+
   
   .controls {
-    display: flex;
-    justify-content: space-between;
-  
-    width: 187px;
+    /* display: block; */
+    padding: 10px;
+    margin-top: 25px;
   }
   
   button {
@@ -61,7 +61,7 @@ body {
     background: transparent;
     padding: 0;
     border: none;
-    margin: 0;
+    margin: 10px;
     outline: none;
     border: 2px solid white;
     border-radius: 50%;
@@ -70,7 +70,28 @@ body {
   #playButton {
     display: block;
   }
+  button:hover{
+    border: 2px solid rgb(254, 25, 25);
+    color: red;
+  }
   
   #pauseButton {
     display: none;
   }
+
+#lap-container{
+  width: 250px;
+  /* text-align: center; */
+}
+
+#lap-container h1{
+  font-weight: 200;
+}
+#lapList li{
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  list-style: none;
+  margin: 5px;
+  font-size: large;
+}
