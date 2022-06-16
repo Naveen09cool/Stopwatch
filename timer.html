@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Stopwatch</title>
+    <link rel="stylesheet" href="timer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="stopwatch">
+      <h1><span class="gold">STOPWATCH</span></h1>
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <img id="playButton" src="img/icon/play_arrow_black_48dp.svg" />
+
+          <img id="pauseButton" src="img/icon/pause_black_48dp.svg" />
+        </button>
+
+        <button class="buttonLap">
+          <img id="lapButton"  src="img/icon/sports_score_black_48dp.svg" />
+        </button>
+
+        <button class="buttonReset">
+          <img id="resetButton" src="img/icon/restart_alt_black_48dp.svg" />
+        </button>
+        
+      </div>
+      <div id="lap-container">
+        <ul id="lapList">
+            <li>Laps:</li>
+        </ul>
+    </div>
+    </div>
+    <script src="timer.js"></script>
+  </body>
+</html>
