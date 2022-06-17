@@ -52,16 +52,18 @@ function reset() {
   clearInterval(timerInterval);
   print("00:00:00");
   elapsedTime = 0;
+  // To switch button
   showButton("PLAY");
+  // For removing list
+  while (lapList.hasChildNodes()) {
+    lapList.removeChild(lapList.firstChild);
+  }
 }
 
-// function lap() {
-
-// }
 function lap() {
-  let lapList = document.getElementById("lap-list")
+  globalThis.lapList = document.getElementById("lap-list")
   // Create an "li" node:
-  let node = document.createElement("li");
+  globalThis.node = document.createElement("li");
   // Create a text node:
   let recordLap = document.createTextNode(timeToString(elapsedTime));
   // Append the text node to the "li" node:
